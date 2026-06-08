@@ -1,8 +1,12 @@
+# Playwright
 node_modules/
 /test-results/
-/tests/coverage-report
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
 .local-browsers/
-/.dev_profile*
+.dev_profile*
 .DS_Store
 *.swp
 *.pyc

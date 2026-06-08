@@ -1,6 +1,6 @@
 import { test, expect, chromium } from '@playwright/test';
 
-test('Record at Cursor Test', async () => {
+test('Record at Cursor Test', { tag: ['@PlaywrightSampleTest'] }, async () => {
   const browser = await chromium.launch({
     headless: false,
     args: ['--disable-blink-features=AutomationControlled'],
