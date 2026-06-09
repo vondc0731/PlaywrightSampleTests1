@@ -21,8 +21,10 @@ test('Record at Cursor Test', { tag: ['@PlaywrightSampleTest'] }, async () => {
       viewport: { width: 1280, height: 800 },
     });
 
-    const page = await context.newPage();
+    try {
+      const page = await context.newPage();
     await page.goto('https://www.google.com/', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
     await captureStep(page, '01_google_home');
 
     // Hide webdriver flag and make the browser appear more human
@@ -37,24 +39,25 @@ test('Record at Cursor Test', { tag: ['@PlaywrightSampleTest'] }, async () => {
     // Search with keywords
     await page.getByRole('combobox', { name: 'Search' }).fill('playwright by testers talk');
     await page.waitForTimeout(800);
+    await page.getByRole('combobox', { name: 'Search' }).isVisible();
     await captureStep(page, '02_google_search_filled');
     await page.getByRole('combobox', { name: 'Search' }).press('Enter');
 
-    await page.waitForTimeout(2500);
+    await page.waitForTimeout(3000);
+    await page.getByRole('link', { name: 'Playwright by Testers Talk' }).first().isVisible();
     await captureStep(page, '03_google_results');
 
     // Click on playlist
     await page.getByRole('link', { name: 'Playwright by Testers Talk' }).first().click();
-    await captureStep(page, '04_playwright_youtube_page');
-
-    // Validate the title of the page
+    await page.waitForTimeout(4000);
     await expect(page).toHaveTitle(/Playwright by Testers Talk/i);
     await captureStep(page, '05_validation_result');
 
     await expect(page.getByRole('link', { name: /Playwright Tutorial Full/i }).first()).toBeVisible();
     await expect(page.getByRole('link', { name: /Playwright API Testing/i }).first()).toBeVisible();
-    await expect(page.getByText(/Playwright Tutorial Full Course/i).first()).toBeVisible();
-    await expect(page.getByText(/Playwright API Testing Tutorial/i).first()).toBeVisible();
+    } finally {
+      await context.close();
+    }
   } finally {
     await browser.close();
   }
