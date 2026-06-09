@@ -1,5 +1,13 @@
 import { test, expect, chromium } from '@playwright/test';
 
+async function captureStep(page: any, name: string) {
+  await page.screenshot({ path: `test-results/screenshots/${name}.png`, fullPage: true });
+  await test.info().attach(name, {
+    path: `test-results/screenshots/${name}.png`,
+    contentType: 'image/png',
+  });
+}
+
 test('Google Search', { tag: ['@PlaywrightSampleTest'] }, async () => {
   const browser = await chromium.launch({
     headless: false,
@@ -14,6 +22,7 @@ test('Google Search', { tag: ['@PlaywrightSampleTest'] }, async () => {
 
   const page = await context.newPage();
   await page.goto('https://www.google.com/', { waitUntil: 'networkidle' });
+  await captureStep(page, '01_google_home');
 
   // Hide webdriver flag and make the browser appear more human
   await page.addInitScript(() => {
@@ -27,12 +36,15 @@ test('Google Search', { tag: ['@PlaywrightSampleTest'] }, async () => {
   // Search with keywords
   await page.getByRole('combobox', { name: 'Search' }).fill('playwright by testers talk');
   await page.waitForTimeout(800);
+  await captureStep(page, '02_google_search_filled');
   await page.getByRole('combobox', { name: 'Search' }).press('Enter');
 
   await page.waitForTimeout(2500);
+  await captureStep(page, '03_google_results');
 
   // Click on playlist
   await page.getByRole('link', { name: 'Playwright by Testers Talk' }).first().click();
+  await captureStep(page, '04_playwright_youtube_page');
 
   // Validate the title of the page
   await expect(page).toHaveTitle('Playwright by Testers Talk ✅ - YouTube');
