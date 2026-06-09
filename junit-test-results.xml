@@ -1,0 +1,62 @@
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="15.540411">
+<testsuite name="01_GoogleSearch.spec.ts" timestamp="2026-06-09T11:07:57.389Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="15.25" errors="0">
+<testcase name="Google Search" classname="01_GoogleSearch.spec.ts" time="15.25">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Microsoft-Edge/attachments/01-google-home-5eb7b83740f9ac9172936f6b485e4ffff1d06d0f.png]]
+
+[[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Microsoft-Edge/attachments/02-google-search-filled-eccf75cb16a04bc8b9541a7d712b7a29091ad1e5.png]]
+
+[[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Microsoft-Edge/attachments/03-google-results-b9d58e563e4c300c6b3ad1ee79f3485e4242b2ad.png]]
+
+[[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Microsoft-Edge/attachments/04-playwright-youtube-page-c5272afb01274d394b635c619c4aeb5019cb91f4.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="02_RecordAtCursor_Test.spec.ts" timestamp="2026-06-09T11:07:57.389Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="14.896" errors="0">
+<testcase name="Record at Cursor Test" classname="02_RecordAtCursor_Test.spec.ts" time="14.896">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Microsoft-Edge/attachments/01-google-home-5eb7b83740f9ac9172936f6b485e4ffff1d06d0f.png]]
+
+[[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Microsoft-Edge/attachments/02-google-search-filled-eccf75cb16a04bc8b9541a7d712b7a29091ad1e5.png]]
+
+[[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Microsoft-Edge/attachments/03-google-results-b9d58e563e4c300c6b3ad1ee79f3485e4242b2ad.png]]
+
+[[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Microsoft-Edge/attachments/05-validation-result-036f709218bd7f97d76afb5ed3d91f42f3ae73d2.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="01_GoogleSearch.spec.ts" timestamp="2026-06-09T11:07:57.389Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="14.92" errors="0">
+<testcase name="Google Search" classname="01_GoogleSearch.spec.ts" time="14.92">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Google-Chrome/attachments/01-google-home-5eb7b83740f9ac9172936f6b485e4ffff1d06d0f.png]]
+
+[[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Google-Chrome/attachments/02-google-search-filled-eccf75cb16a04bc8b9541a7d712b7a29091ad1e5.png]]
+
+[[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Google-Chrome/attachments/03-google-results-b9d58e563e4c300c6b3ad1ee79f3485e4242b2ad.png]]
+
+[[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Google-Chrome/attachments/04-playwright-youtube-page-c5272afb01274d394b635c619c4aeb5019cb91f4.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="02_RecordAtCursor_Test.spec.ts" timestamp="2026-06-09T11:07:57.389Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="14.71" errors="0">
+<testcase name="Record at Cursor Test" classname="02_RecordAtCursor_Test.spec.ts" time="14.71">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Google-Chrome/attachments/01-google-home-5eb7b83740f9ac9172936f6b485e4ffff1d06d0f.png]]
+
+[[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Google-Chrome/attachments/02-google-search-filled-eccf75cb16a04bc8b9541a7d712b7a29091ad1e5.png]]
+
+[[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Google-Chrome/attachments/03-google-results-b9d58e563e4c300c6b3ad1ee79f3485e4242b2ad.png]]
+
+[[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Google-Chrome/attachments/05-validation-result-036f709218bd7f97d76afb5ed3d91f42f3ae73d2.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
