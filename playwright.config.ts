@@ -30,7 +30,7 @@ export default defineConfig({
     //['dot'],
     //['json', { outputFile: 'json-test-results.json' }],
     ['junit', { outputFile: 'junit-test-results.xml' }],
-    //['allure-playwright'],
+    ['allure-playwright'],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="15.540411">
-<testsuite name="01_GoogleSearch.spec.ts" timestamp="2026-06-09T11:07:57.389Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="15.25" errors="0">
-<testcase name="Google Search" classname="01_GoogleSearch.spec.ts" time="15.25">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="17.191449000000002">
+<testsuite name="01_GoogleSearch.spec.ts" timestamp="2026-06-11T05:55:28.927Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="16.876" errors="0">
+<testcase name="Google Search" classname="01_GoogleSearch.spec.ts" time="16.876">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Microsoft-Edge/attachments/01-google-home-5eb7b83740f9ac9172936f6b485e4ffff1d06d0f.png]]
@@ -14,8 +14,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="02_RecordAtCursor_Test.spec.ts" timestamp="2026-06-09T11:07:57.389Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="14.896" errors="0">
-<testcase name="Record at Cursor Test" classname="02_RecordAtCursor_Test.spec.ts" time="14.896">
+<testsuite name="02_RecordAtCursor_Test.spec.ts" timestamp="2026-06-11T05:55:28.927Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="16.051" errors="0">
+<testcase name="Record at Cursor Test" classname="02_RecordAtCursor_Test.spec.ts" time="16.051">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Microsoft-Edge/attachments/01-google-home-5eb7b83740f9ac9172936f6b485e4ffff1d06d0f.png]]
@@ -29,8 +29,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="01_GoogleSearch.spec.ts" timestamp="2026-06-09T11:07:57.389Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="14.92" errors="0">
-<testcase name="Google Search" classname="01_GoogleSearch.spec.ts" time="14.92">
+<testsuite name="01_GoogleSearch.spec.ts" timestamp="2026-06-11T05:55:28.927Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="16.014" errors="0">
+<testcase name="Google Search" classname="01_GoogleSearch.spec.ts" time="16.014">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|test-results/01_GoogleSearch-Google-Search-Google-Chrome/attachments/01-google-home-5eb7b83740f9ac9172936f6b485e4ffff1d06d0f.png]]
@@ -44,8 +44,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="02_RecordAtCursor_Test.spec.ts" timestamp="2026-06-09T11:07:57.389Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="14.71" errors="0">
-<testcase name="Record at Cursor Test" classname="02_RecordAtCursor_Test.spec.ts" time="14.71">
+<testsuite name="02_RecordAtCursor_Test.spec.ts" timestamp="2026-06-11T05:55:28.927Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="15.403" errors="0">
+<testcase name="Record at Cursor Test" classname="02_RecordAtCursor_Test.spec.ts" time="15.403">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|test-results/02_RecordAtCursor_Test-Record-at-Cursor-Test-Google-Chrome/attachments/01-google-home-5eb7b83740f9ac9172936f6b485e4ffff1d06d0f.png]]
