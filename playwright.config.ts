@@ -32,9 +32,7 @@ export default defineConfig({
     //['json', { outputFile: 'json-test-results.json' }],
     ['junit', { outputFile: 'junit-test-results.xml' }],
     ['allure-playwright', {
-      detail: true,
-      outputFolder: 'allure-results', // ← this folder must match Jenkins config
-      suiteTitle: false,
+    outputFolder: 'allure-results',  // must match Step 4 exactly
     }],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
