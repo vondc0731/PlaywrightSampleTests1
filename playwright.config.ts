@@ -1,5 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -30,7 +31,11 @@ export default defineConfig({
     //['dot'],
     //['json', { outputFile: 'json-test-results.json' }],
     ['junit', { outputFile: 'junit-test-results.xml' }],
-    ['allure-playwright'],
+    ['allure-playwright', {
+      detail: true,
+      outputFolder: 'allure-results', // ← this folder must match Jenkins config
+      suiteTitle: false,
+    }],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
